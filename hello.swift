@@ -8,11 +8,11 @@ import Foundation
 print("*** Hello, Swift! ***")
 
 print("\n*** Array ***")
-let ints = [1, 2, 3]
-print("ints: \(ints) sum to: \(ints.reduce(0, +))")
+let array: Array<Int> = [1, 2, 3]
+print("array: \(array) sum to: \(array.reduce(0, +))")
 
 print("\n*** Dictionary ***")
-let map = [1:1, 2:2, 3:3]
+let map: Dictionary<Int, Int> = [1:1, 2:2, 3:3]
 print("map: \(map) sum keys to: \(map.keys.reduce(0, +))")
 print("map: \(map) sum values to: \(map.values.reduce(0, +))")
 
