@@ -1,3 +1,3 @@
 import Foundation
 
-println("Hello, Swift!")
+print("Hello, Swift!")
