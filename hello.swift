@@ -37,6 +37,13 @@ enum Week: String, CaseIterable {
 }
 print("enum cases: \(Week.allCases)")
 
+print("\n*** Tuple ***")
+let statusCode = (200, "Success")
+print("status code -> code: \(statusCode.0) message: \(statusCode.1)")
+let (code, message) = statusCode
+print("destructured -> code: \(code) message: \(message)")
+
+
 print("\n*** Struct ***")
 struct RGB {
    let red: Int
