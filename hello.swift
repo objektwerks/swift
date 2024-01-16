@@ -7,6 +7,17 @@ import Foundation
 
 print("*** Hello, Swift! ***")
 
+print("\n*** String ***")
+let string = "string"
+let multi =
+"""
+multi
+line
+string
+"""
+print("string: \(string)")
+print("multi: \(multi)")
+
 print("\n*** Array ***")
 let array: Array<Int> = [1, 2, 3]
 print("array: \(array) sum to: \(array.reduce(0, +))")
