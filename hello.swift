@@ -98,3 +98,14 @@ while i < 3 {
    i += 1
    print("while loop n: \(i)")
 }
+
+print("\n*** Switch ***")
+let letter = "z"
+switch letter {
+  case "a":
+    print("match on - a")
+  case "z":
+    print("match on - z")
+  default:
+    print("switch failed: \(letter)")
+}
