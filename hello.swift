@@ -46,6 +46,12 @@ struct RGB {
 let rgb = RGB(red:1, green:2, blue:3)
 print("rgb -> r: \(rgb.red) g: \(rgb.green) b: \(rgb.blue)")
 
+print("\n*** Class ***")
+class Person {
+  let name: String
+  let age: Int
+}
+
 print("\n*** If Else ***")
 let condition = true
 if condition {
