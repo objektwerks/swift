@@ -19,5 +19,11 @@ print("map: \(map) sum values to: \(map.values.reduce(0, +))")
 print("\n*** Enum ***")
 enum Week: String, CaseIterable {
   case monday, tuesday, wednesday, thursday, friday, saturday, sunday
-}
+};
 print("enum cases: \(Week.allCases)")
+
+print("\n*** For Loop ***")
+let letters = ["a", "b", "c"]
+for letter in letters {
+    print("letter: \(letter)")
+}
