@@ -19,16 +19,16 @@ print("string: \(string)")
 print("multi: \(multi)")
 
 print("\n*** Array ***")
-let array: Array<Int> = [1, 2, 3]
+let array = [1, 2, 3]
 print("array: \(array) sum to: \(array.reduce(0, +))")
 
 print("\n*** Dictionary ***")
-let map: Dictionary<Int, Int> = [1:1, 2:2, 3:3]
+let map = [1:1, 2:2, 3:3]
 print("map: \(map) sum keys to: \(map.keys.reduce(0, +))")
 print("map: \(map) sum values to: \(map.values.reduce(0, +))")
 
 print("\n*** Set ***")
-let set: Set<Int> = [1, 2, 3, 3]
+let set: Set = [1, 2, 3, 3]
 print("set: \(set) sum to: \(set.reduce(0, +))")
 
 print("\n*** Enum ***")
