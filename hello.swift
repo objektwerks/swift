@@ -46,7 +46,6 @@ print("status code -> code: \(statusCode.0) message: \(statusCode.1)")
 let (code, message) = statusCode
 print("destructured -> code: \(code) message: \(message)")
 
-
 print("\n*** Struct ***")
 struct RGB {
    let red: Int
