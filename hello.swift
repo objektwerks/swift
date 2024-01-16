@@ -67,6 +67,12 @@ class Person {
 let person = Person(name:"Fred Flintstone", age:24)
 print("person -> name: \(person.name) age: \(person.age)")
 
+print("\n*** Function ***")
+func double(number: Int) -> Int {
+  number + number
+}
+print("func double(2) -> \(double(number: 2))")
+
 print("\n*** Optional ***")
 let someNumber: Int? = Optional.some(42)
 let noneNumber: Int? = Optional.none
