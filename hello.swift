@@ -17,7 +17,7 @@ print("map: \(map) sum keys to: \(map.keys.reduce(0, +))")
 print("map: \(map) sum values to: \(map.values.reduce(0, +))")
 
 print("\n*** Set ***")
-let set: Set<Int> = [1, 2, 3]
+let set: Set<Int> = [1, 2, 3, 3]
 print("set: \(set) sum to: \(set.reduce(0, +))")
 
 print("\n*** Enum ***")
