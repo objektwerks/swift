@@ -6,3 +6,7 @@ import Foundation
 */
 
 print("Hello, Swift!")
+
+print("Arrays")
+var ints = [1, 2, 3]
+print(ints)
