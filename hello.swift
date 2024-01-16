@@ -24,6 +24,9 @@ print("array: \(array) sum to: \(array.reduce(0, +))")
 
 print("\n*** Dictionary ***")
 let map = [1:1, 2:2, 3:3]
+for (key, value) in map {
+  print("key-value: \(key)-\(value)")
+}
 print("map: \(map) sum keys to: \(map.keys.reduce(0, +))")
 print("map: \(map) sum values to: \(map.values.reduce(0, +))")
 
