@@ -5,8 +5,8 @@ import Foundation
   To include basic language features.
 */
 
-print("Hello, Swift!")
+print("*** Hello, Swift! ***\n")
 
-print("Arrays")
+print("*** Arrays ***\n")
 var ints = [1, 2, 3]
 print(ints)
