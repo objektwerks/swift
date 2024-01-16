@@ -73,6 +73,11 @@ func double(number: Int) -> Int {
 }
 print("func double(2) -> \(double(number: 2))")
 
+print("\n*** Closure ***")
+let unsorted = ["c", "b", "a"]
+print("unsorted: \(unsorted)")
+print("sorted: \(unsorted.sorted(by: { s, ss in s < ss } ))")
+
 print("\n*** Optional ***")
 let someNumber: Int? = Optional.some(42)
 let noneNumber: Int? = Optional.none
