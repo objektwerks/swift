@@ -15,3 +15,9 @@ print("\n*** Dictionary ***")
 let map = [1:1, 2:2, 3:3]
 print("map: \(map) sum keys to: \(map.keys.reduce(0, +))")
 print("map: \(map) sum values to: \(map.values.reduce(0, +))")
+
+print("\n*** Enum ***")
+enum Week: String, CaseIterable {
+  case monday, tuesday, wednesday, thursday, friday, saturday, sunday
+}
+print("enum cases: \(Week.allCases)")
