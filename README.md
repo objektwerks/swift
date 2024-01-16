@@ -13,3 +13,7 @@ Run
 Compile and Run
 ---------------
 1. swiftc hello.swift && ./hello
+
+Resources
+---------
+* [Swift Documentation]([text](https://www.swift.org/documentation/))
