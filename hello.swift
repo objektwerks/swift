@@ -34,8 +34,17 @@ print("set: \(set) sum to: \(set.reduce(0, +))")
 print("\n*** Enum ***")
 enum Week: String, CaseIterable {
   case monday, tuesday, wednesday, thursday, friday, saturday, sunday
-};
+}
 print("enum cases: \(Week.allCases)")
+
+print("\n*** Struct ***")
+struct RGB {
+   let red: Int
+   let green: Int
+   let blue: Int
+}
+let rgb = RGB(red:1, green:2, blue:3)
+print("rgb -> r: \(rgb.red) g: \(rgb.green) b: \(rgb.blue)")
 
 print("\n*** If Else ***")
 let condition = true
