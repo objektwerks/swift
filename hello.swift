@@ -56,3 +56,10 @@ for (index, letter) in letters.enumerated() {
 for letter in letters where letter != "a"{
     print("where != a: \(letter)")
 }
+
+print("\n*** While Loop ***")
+var i = 0
+while i < 3 {
+   i += 1
+   print("while loop n: \(i)")
+}
