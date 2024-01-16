@@ -50,7 +50,13 @@ print("\n*** Class ***")
 class Person {
   let name: String
   let age: Int
+  init(name: String, age: Int) {
+      self.name = name
+      self.age = age
+  }
 }
+let person = Person(name:"Fred Flintstone", age:24)
+print("person -> name: \(person.name) age: \(person.age)")
 
 print("\n*** If Else ***")
 let condition = true
