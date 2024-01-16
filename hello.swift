@@ -27,3 +27,6 @@ let letters = ["a", "b", "c"]
 for letter in letters {
     print("letter: \(letter)")
 }
+for (index, letter) in letters.enumerated() {
+  print("index: \(index) - letter: \(letter)")
+}
