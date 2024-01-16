@@ -68,7 +68,7 @@ print("person -> name: \(person.name) age: \(person.age)")
 print("\n*** Optional ***")
 let someNumber: Int? = Optional.some(42)
 let noneNumber: Int? = Optional.none
-print("some: \(someNumber!) none: \(noneNumber == nil)")
+print("some: \(someNumber ?? 0) none: \(noneNumber == nil)")
 
 print("\n*** If Else ***")
 let condition = true
