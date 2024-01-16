@@ -9,3 +9,7 @@ Compile
 Run
 ---
 1. ./hello
+
+Compile and Run
+---------------
+1. swiftc hello.swift && ./hello
