@@ -30,3 +30,6 @@ for letter in letters {
 for (index, letter) in letters.enumerated() {
   print("index: \(index) - letter: \(letter)")
 }
+for letter in letters where letter != "a"{
+    print("where != a: \(letter)")
+}
