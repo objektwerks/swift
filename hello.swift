@@ -7,6 +7,6 @@ import Foundation
 
 print("*** Hello, Swift! ***\n")
 
-print("*** Arrays ***\n")
+print("*** Array ***\n")
 let ints = [1, 2, 3]
 print("ints: \(ints) sum to: \(ints.reduce(0, +))")
