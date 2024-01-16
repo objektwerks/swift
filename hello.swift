@@ -37,6 +37,14 @@ enum Week: String, CaseIterable {
 };
 print("enum cases: \(Week.allCases)")
 
+print("\n*** If Else ***")
+let condition = true
+if condition {
+  print("if condition: true")
+} else {
+  print("else condition: false")
+}
+
 print("\n*** For Loop ***")
 let letters = ["a", "b", "c"]
 for letter in letters {
