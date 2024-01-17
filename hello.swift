@@ -63,9 +63,12 @@ class Person {
       self.name = name
       self.age = age
   }
+  func toString() -> String {
+    "type: Person name: \(name) age: \(age)"
+  }
 }
 let person = Person(name:"Fred Flintstone", age:24)
-print("person -> name: \(person.name) age: \(person.age)")
+print(person.toString())
 
 print("\n*** Function ***")
 func double(number: Int) -> Int {
