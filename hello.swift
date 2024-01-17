@@ -109,7 +109,7 @@ func doIO() throws { throw IOError.ioError("IO failed!") }
 do {
   try doIO()
 } catch IOError.ioError(let error) {
-  print("IOError occured: \(error)")
+  print("io error occured: \(error)")
 }
 
 print("\n*** Optional ***")
@@ -161,3 +161,10 @@ switch letter {
   default:
     print("switch failed: \(letter)")
 }
+
+print("\n*** Async / Await ***")
+func randomInt() async -> Int {
+    Int.random(in: 1...6)
+}
+let result = await randomInt()
+print("async randomInt: \(result)")
