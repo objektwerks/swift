@@ -98,6 +98,13 @@ class Box : Shape {
   }
   override func area() -> Double { side * side }
 }
+extension Box {
+  func toString() -> String {
+    "type: Box side: \(side) area: \(area())"
+  }
+}
+let box = Box(side: 3)
+print(box.toString())
 
 print("\n*** Function ***")
 func double(number: Int) -> Int {
