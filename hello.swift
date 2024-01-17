@@ -106,6 +106,13 @@ let someNumber: Int? = Optional.some(42)
 let noneNumber: Int? = Optional.none
 print("some: \(someNumber ?? 0) none: \(noneNumber == nil)")
 
+print("\n*** Optional Chaining ***")
+class Parent { var child: Child? }
+class Child { var number: Int = 1 }
+let parent = Parent()
+let child = parent.child?.number
+print("does parent have a child? - \(child != nil)")
+
 print("\n*** If Else ***")
 let condition = true
 if condition {
