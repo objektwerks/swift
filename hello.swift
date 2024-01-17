@@ -70,6 +70,21 @@ class Person {
 let person = Person(name:"Fred Flintstone", age:24)
 print(person.toString())
 
+print("\n*** Inheritance ***")
+class Shape {
+  func area() -> Double { 0.0 }
+}
+class Circle: Shape {
+  let pi = 3.14
+  let radius: Double
+  init(radius: Double) {
+    self.radius = radius
+  }
+  func diameter() -> Double { radius * 2 }
+  func area() -> Double { pi * (radius * radius) }
+}
+
+
 print("\n*** Function ***")
 func double(number: Int) -> Int {
   number + number
