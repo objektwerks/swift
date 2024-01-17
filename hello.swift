@@ -194,6 +194,9 @@ switch letter {
     print("switch failed: \(letter)")
 }
 
+print("\n*** Generics ***")
+
+
 print("\n*** Async / Await ***")
 func randomInt() async -> Int {
     Int.random(in: 1...6)
