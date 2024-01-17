@@ -65,7 +65,7 @@ class Person {
       self.age = age
   }
   deinit {
-    print("deinit: \(toString())")
+    print("deinit: \(toString())") // never called!
   }
   func toString() -> String {
     "type: Person name: \(name) age: \(age)"
