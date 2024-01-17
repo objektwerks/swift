@@ -90,6 +90,15 @@ class Circle: Shape {
 let circle = Circle(radius: 3.0)
 print(circle.toString())
 
+print("\n*** Extension ***")
+class Box : Shape {
+  let side: Double
+  init(side: Double) {
+    self.side = side
+  }
+  override func area() -> Double { side * side }
+}
+
 print("\n*** Function ***")
 func double(number: Int) -> Int {
   number + number
