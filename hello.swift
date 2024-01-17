@@ -101,6 +101,17 @@ let unsorted = ["c", "b", "a"]
 print("unsorted: \(unsorted)")
 print("sorted: \(unsorted.sorted(by: { s, ss in s < ss } ))")
 
+print("\n*** Error Handling ***")
+enum IOError: Error {
+  case ioError(String)
+}
+func doIO() throws { throw IOError.ioError("IO failed!") }
+do {
+  try doIO()
+} catch IOError.ioError(let error) {
+  print("IOError occured: \(error)")
+}
+
 print("\n*** Optional ***")
 let someNumber: Int? = Optional.some(42)
 let noneNumber: Int? = Optional.none
