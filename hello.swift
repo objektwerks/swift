@@ -90,6 +90,22 @@ class Circle: Shape {
 let circle = Circle(radius: 3.0)
 print(circle.toString())
 
+print("\n*** Protocol ***")
+protocol Id {
+  var id: String { get }
+}
+class User : Id {
+  let id: String
+  init(id: String) {
+    self.id = id
+  }
+  func toString() -> String {
+    "type: User id: \(id)"
+  }
+}
+let user = User(id: "abc123")
+print(user.toString())
+
 print("\n*** Extension ***")
 class Box : Shape {
   let side: Double
