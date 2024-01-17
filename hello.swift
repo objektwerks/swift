@@ -194,7 +194,7 @@ switch letter {
     print("switch failed: \(letter)")
 }
 
-print("\n*** Generics ***")
+print("\n*** Generic Class ***")
 class Container<T> {
   let item: T
   init(item: T) {
@@ -203,6 +203,11 @@ class Container<T> {
 }
 let container = Container<Int>(item: 1)
 print("container.item = \(container.item)")
+
+print("\n*** Generic Function ***")
+func add<N: Numeric>(x: N, y: N) -> N { x + y }
+print("add<int> - \(add(x: 1, y: 2))")
+print("add<double> - \(add(x: 1.2, y: 2.3))")
 
 print("\n*** Async / Await ***")
 func randomInt() async -> Int {
