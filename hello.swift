@@ -48,9 +48,7 @@ print("destructured -> code: \(code) message: \(message)")
 
 print("\n*** Struct ***")
 struct RGB {
-   let red: Int
-   let green: Int
-   let blue: Int
+   let red, green, blue: Int
 }
 let rgb = RGB(red: 1, green: 2, blue: 3)
 print("rgb -> r: \(rgb.red) g: \(rgb.green) b: \(rgb.blue)")
