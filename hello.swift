@@ -195,7 +195,14 @@ switch letter {
 }
 
 print("\n*** Generics ***")
-
+class Container<T> {
+  let item: T
+  init(item: T) {
+    self.item = item
+  }
+}
+let container = Container<Int>(item: 1)
+print("container.item = \(container.item)")
 
 print("\n*** Async / Await ***")
 func randomInt() async -> Int {
