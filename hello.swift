@@ -67,7 +67,7 @@ class Person {
     "type: Person name: \(name) age: \(age)"
   }
 }
-let person = Person(name:"Fred Flintstone", age:24)
+let person = Person(name: "Fred Flintstone", age: 24)
 print(person.toString())
 
 print("\n*** Inheritance ***")
@@ -81,9 +81,13 @@ class Circle: Shape {
     self.radius = radius
   }
   func diameter() -> Double { radius * 2 }
-  func area() -> Double { pi * (radius * radius) }
+  override func area() -> Double { pi * (radius * radius) }
+  func toString() -> String {
+    "type: Circle radius: \(radius) diameter: \(diameter()) area: \(area())"
+  }
 }
-
+let circle = Circle(radius: 3.0)
+print(circle.toString())
 
 print("\n*** Function ***")
 func double(number: Int) -> Int {
