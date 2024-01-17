@@ -10,11 +10,11 @@ print("*** Hello, Swift! ***")
 print("\n*** String ***")
 let string = "string"
 let multi =
-"""
-multi
-line
-string
-"""
+  """
+  multi
+  line
+  string
+  """
 print("string: \(string)")
 print("multi: \(multi)")
 
@@ -61,11 +61,11 @@ class Person {
   let name: String
   let age: Int
   init(name: String, age: Int) {
-      self.name = name
-      self.age = age
+    self.name = name
+    self.age = age
   }
   deinit {
-    print("deinit: \(toString())") // never called!
+    print("deinit: \(toString())")  // never called!
   }
   func toString() -> String {
     "type: Person name: \(name) age: \(age)"
@@ -111,7 +111,7 @@ print("\n*** Protocol ***")
 protocol Id {
   var id: String { get }
 }
-class User : Id {
+class User: Id {
   let id: String
   init(id: String) {
     self.id = id
@@ -124,7 +124,7 @@ let user = User(id: "abc123")
 print(user.toString())
 
 print("\n*** Extension ***")
-class Box : Shape {
+class Box: Shape {
   let side: Double
   init(side: Double) {
     self.side = side
@@ -170,7 +170,7 @@ print("\n*** Optional Chaining ***")
 class Parent { var child: Child? }
 class Child { var number: Int = 1 }
 let parent = Parent()
-let child = parent.child?.number // or forced: parent.child!.number
+let child = parent.child?.number  // or forced: parent.child!.number
 print("does parent have a child? - \(child != nil)")
 
 print("\n*** If Else ***")
@@ -184,31 +184,31 @@ if condition {
 print("\n*** For Loop ***")
 let letters = ["a", "b", "c"]
 for letter in letters {
-    print("letter: \(letter)")
+  print("letter: \(letter)")
 }
 for (index, letter) in letters.enumerated() {
   print("index: \(index) - letter: \(letter)")
 }
-for letter in letters where letter != "a"{
-    print("where != a: \(letter)")
+for letter in letters where letter != "a" {
+  print("where != a: \(letter)")
 }
 
 print("\n*** While Loop ***")
 var i = 0
 while i < 3 {
-   i += 1
-   print("while loop n: \(i)")
+  i += 1
+  print("while loop n: \(i)")
 }
 
 print("\n*** Switch ***")
 let letter = "z"
 switch letter {
-  case "a":
-    print("match on - a")
-  case "z":
-    print("match on - z")
-  default:
-    print("switch failed: \(letter)")
+case "a":
+  print("match on - a")
+case "z":
+  print("match on - z")
+default:
+  print("switch failed: \(letter)")
 }
 
 print("\n*** Generic Class ***")
@@ -228,7 +228,7 @@ print("add<double> - \(add(x: 1.2, y: 2.3))")
 
 print("\n*** Async / Await ***")
 func randomInt() async -> Int {
-    Int.random(in: 1...6)
+  Int.random(in: 1...6)
 }
 let result = await randomInt()
 print("async randomInt: \(result)")
