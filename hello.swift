@@ -41,10 +41,10 @@ enum Week: String, CaseIterable {
 print("enum cases: \(Week.allCases)")
 
 print("\n*** Tuple ***")
-let statusCode = (200, "Success")
-print("status code -> code: \(statusCode.0) message: \(statusCode.1)")
-let (code, message) = statusCode
-print("destructured -> code: \(code) message: \(message)")
+let statusCode = ("Success", 200)
+print("type: Tuple(String, Int) status: \(statusCode.0) code: \(statusCode.1)")
+let (status, code) = statusCode
+print("type: Tuple(String, Int) [destructured] status: \(status) code: \(code)")
 
 print("\n*** Struct ***")
 struct RGB {
