@@ -74,6 +74,20 @@ class Person {
 let person = Person(name: "Fred Flintstone", age: 24)
 print(person.toString())
 
+print("\n*** Property Observer ***")
+class StepCounter {
+  var total: Int = 0 {
+    willSet(newTotal) {
+      print("will set step total to: \(newTotal)")
+    }
+    didSet {
+      print("did set step total to: \(total)")
+    }
+  }
+}
+let stepCounter = StepCounter()
+stepCounter.total = 1
+
 print("\n*** Inheritance ***")
 class Shape {
   func area() -> Double { 0.0 }
