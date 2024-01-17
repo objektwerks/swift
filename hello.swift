@@ -23,7 +23,7 @@ let array = [1, 2, 3]
 print("array: \(array) sum to: \(array.reduce(0, +))")
 
 print("\n*** Dictionary ***")
-let map = [1:1, 2:2, 3:3]
+let map = [1: 1, 2: 2, 3: 3]
 for (key, value) in map {
   print("key-value: \(key)-\(value)")
 }
@@ -52,7 +52,7 @@ struct RGB {
    let green: Int
    let blue: Int
 }
-let rgb = RGB(red:1, green:2, blue:3)
+let rgb = RGB(red: 1, green: 2, blue: 3)
 print("rgb -> r: \(rgb.red) g: \(rgb.green) b: \(rgb.blue)")
 
 print("\n*** Class ***")
