@@ -110,7 +110,7 @@ print("\n*** Optional Chaining ***")
 class Parent { var child: Child? }
 class Child { var number: Int = 1 }
 let parent = Parent()
-let child = parent.child?.number
+let child = parent.child?.number // or forced: parent.child!.number
 print("does parent have a child? - \(child != nil)")
 
 print("\n*** If Else ***")
