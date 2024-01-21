@@ -233,11 +233,6 @@ func randomInt() async -> Int {
 let result = await randomInt()
 print("async randomInt: \(result)")
 
-/*
-def sum(xs: List[Int], acc: Int = 0): Int = xs match
-  case Nil => acc
-  case head :: tail => sum(tail, acc + head)
-*/
 print("\n*** Recursion ***")
 func sum(xs: ArraySlice<Int>, acc: Int = 0) -> Int {
   guard let head = xs.first else { return acc }
