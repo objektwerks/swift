@@ -16,5 +16,5 @@ Compile and Run
 
 Resources
 ---------
-* [Swift Documentation]([text](https://www.swift.org/documentation/)
-* [Swift Programming Language]([text](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)
+* [Swift Documentation](https://www.swift.org/documentation/)
+* [Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)
