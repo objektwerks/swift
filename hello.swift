@@ -2,7 +2,7 @@ import Foundation
 
 // Hello Swift App
 /*
-  To include basic language features.
+  Covers basic Swift language features.
 */
 
 print("*** Hello, Swift! ***")
