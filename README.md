@@ -1,6 +1,6 @@
 Swift
 -----
->Swift feature app.
+>Swift language features app.
 
 Compile
 -------
